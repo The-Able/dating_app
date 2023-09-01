@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--<string name="google_app_id">216412166592</string>-->
+
+  <!--cloudinary-->
+  <string name="cloud_name">dab3faokx</string>
+  <string name="cloud_api_key">651165513729239</string>
+  <string name="cloud_api_secret">v-ydBbfwCe78ONV0fUaTO9hPp0o</string>
+
+  <!-- Notification channel -->
+  <string name="notification.channel.id">com.libra.general</string>
+  <string name="notification.channel.title">General</string>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="40dp"
+      android:background="@drawable/bg_dialog"
+      android:gravity="center"
+      android:orientation="vertical"
+      android:paddingBottom="24dp"
+      android:paddingLeft="24dp"
+      android:paddingRight="24dp"
+      android:paddingTop="40dp"
+      >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/desserts_you_like"
+        android:textAllCaps="true"
+        style="@style/TextAppearance.Regular.ExtraLarge"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/desert_time"
+        style="@style/TextAppearance.Regular.Medium"
+        />
+  </LinearLayout>
+
+  <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:contentDescription="@null"
+      app:srcCompat="@drawable/ic_dessert"
+      />
+
+  <ImageView
+      android:id="@+id/iv_close"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentRight="true"
+      android:layout_marginTop="40dp"
+      android:contentDescription="@null"
+      android:tint="@color/app_black"
+      app:srcCompat="@drawable/ic_close_24dp"
+      />
+</RelativeLayout>

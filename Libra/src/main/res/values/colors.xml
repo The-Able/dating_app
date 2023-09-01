@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="color_primary">@color/brand_color</color>
+  <color name="color_primary_dark">@color/brand_color</color>
+  <color name="color_accent">@color/purple_color</color>
+  <color name="color_accent_50">#80d53e64</color>
+
+  <color name="orange_text">#f89e4f</color>
+  <color name="app_transparent">#00ffffff</color>
+  <color name="app_white">#ffffff</color>
+  <color name="app_white_50">#80ffffff</color>
+  <color name="app_red">#e34444</color>
+  <color name="app_black">#ff000000</color>
+  <color name="app_black_new">#040608</color>
+  <color name="app_black_25">#25000000</color>
+  <color name="app_black_e5">#f5f5f5</color>
+  <color name="app_login_gray">#fff0f2f5</color>
+  <color name="login_add_photo">#ff272f38</color>
+  <color name="user_stroke_avatar">#2a3e50</color>
+  <color name="bg_gray_chat_element">#cccccc</color>
+  <color name="uncheck_color">#cfcfcf</color>
+  <color name="bg_msg_my">@color/app_white</color>
+  <color name="bg_msg_friend">@color/yellow_btn</color>
+  <color name="chat_like">#e0301a</color>
+  <color name="light_grey">#c5c5c5</color>
+  <color name="v_light_grey">#cccccc</color>
+  <color name="grey">#6e6e6e</color>
+  <color name="light_blue">#41D4FF</color>
+  <color name="purple_color">#d53e64</color>
+  <!-- text color-->
+  <color name="text_gray">#fffefefe</color>
+
+  <!-- dividers -->
+  <color name="divider_gray_1">#d4d4d4</color>
+  <color name="divider_gray_2">#e2e2e2</color>
+    <color name="app_black_f2">#F2F2F2</color>
+  <color name="restau_color">#7932CE</color>
+  <color name="park_color">#688E26</color>
+  <color name="gym_color">#6699CC</color>
+  <color name="off_color">#345995</color>
+  <color name="shopp_color">#D9AA33</color>
+  <color name="cup_color">#5E548E</color>
+    <color name="brand_color">#FF1854</color>
+    <color name="yellow_btn">#FCA33A</color>
+    <color name="yellow_btn_30">#4DFCA33A</color>
+  <color name="yellow_btn_10">#1AFCA33A</color>
+    <color name="grey_d7">#D7D7D7</color>
+  <color name="light_divider">#F0F0F0</color>
+
+
+</resources>

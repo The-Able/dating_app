@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    >
+
+  <TextView
+      android:id="@+id/name"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:layout_marginRight="8dp"
+      android:ellipsize="end"
+      android:maxLines="1"
+      app:layout_constraintEnd_toStartOf="@+id/distance"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="TestCafe"
+      style="@style/TextAppearance.Book.Medium"
+      />
+
+  <TextView
+      android:id="@+id/distance"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintBaseline_toBaselineOf="@+id/name"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="23miles 38km"
+      style="@style/TextAppearance.Light.Micro"
+      />
+
+  <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/tvAddress"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toStartOf="@+id/name"
+      app:layout_constraintTop_toBottomOf="@+id/name"
+      tools:text="Lorem Ipsum"
+      style="@style/TextAppearance.Light.Micro"
+      />
+
+  <LinearLayout
+      android:id="@+id/progressContainer"
+      android:layout_width="0dp"
+      android:layout_height="28dp"
+      android:layout_marginTop="8dp"
+      android:orientation="horizontal"
+      android:weightSum="10"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvAddress"
+      >
+
+    <FrameLayout
+        android:id="@+id/progressLadies"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:background="@color/color_accent"
+        android:paddingLeft="4dp"
+        android:paddingStart="4dp"
+        >
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/ladiesValue"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_gravity="center_vertical|start|left"
+          android:drawablePadding="4dp"
+          android:padding="2dp"
+          android:textColor="@color/color_primary_dark"
+          app:autoSizeMaxTextSize="22sp"
+          app:autoSizeMinTextSize="12sp"
+          app:autoSizeTextType="uniform"
+          tools:text="7"
+          style="@style/TextAppearance.MediumFonts"
+          />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/progressMans"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:background="@color/color_primary"
+        android:paddingEnd="4dp"
+        android:paddingRight="4dp"
+        >
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/mansValue"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_gravity="center_vertical|end|right"
+          android:drawablePadding="4dp"
+          android:padding="2dp"
+          android:textColor="@color/color_accent"
+          app:autoSizeMaxTextSize="22sp"
+          app:autoSizeMinTextSize="12sp"
+          app:autoSizeTextType="uniform"
+          tools:text="7"
+          style="@style/TextAppearance.MediumFonts"
+          />
+
+    </FrameLayout>
+
+  </LinearLayout>
+
+  <FrameLayout
+      android:id="@+id/emptyView"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:background="@color/light_grey"
+      android:visibility="gone"
+      app:layout_constraintBottom_toBottomOf="@+id/progressContainer"
+      app:layout_constraintEnd_toEndOf="@+id/progressContainer"
+      app:layout_constraintStart_toStartOf="@+id/progressContainer"
+      app:layout_constraintTop_toTopOf="@+id/progressContainer"
+      >
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/no_one_connected"
+        android:textColor="@color/grey"
+        android:textSize="14sp"
+        />
+
+  </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

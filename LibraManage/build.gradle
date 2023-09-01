@@ -1,0 +1,131 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+//apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion 31
+
+    defaultConfig {
+        targetSdkVersion 31
+        minSdkVersion 21
+
+        applicationId "com.libra.manage"
+
+        versionName "1.0.1_20200902_manage"
+        versionCode 5
+    }
+
+    signingConfigs {
+        signDev {
+            storeFile file('../sign_dev/keystoreDev.jks')
+            storePassword 'testDev'
+            keyAlias 'management'
+            keyPassword 'devKeyPass'
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.signDev
+
+            ext.enableCrashlytics = false
+
+            minifyEnabled false
+        }
+
+        release {
+            signingConfig signingConfigs.signDev
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions "default"
+    productFlavors {
+
+        dev {
+            buildConfigField 'String', 'FIRE_HOST', FIRE_HOST_DEV
+            dimension "default"
+        }
+
+        prod {
+            buildConfigField 'String', 'FIRE_HOST', FIRE_HOST_PROD
+            dimension "default"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    packagingOptions {
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE-FIREBASE.txt'
+    }
+
+    //    applicationVariants.all { variant ->
+    //        variant.outputs.each { output ->
+    //            output.outputFile = new File(output.outputFile.parent, output.outputFile.name.replace('.apk', "-${versionCode}-${versionName}.apk"))
+    //        }
+    //    }
+
+    dexOptions {
+        preDexLibraries = false
+        maxProcessCount 4
+        javaMaxHeapSize "2g"
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "androidx.appcompat:appcompat:1.4.0"
+    implementation "com.google.android.material:material:1.6.0-alpha01"
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+    implementation "com.google.android.gms:play-services-location:19.0.0"
+    implementation 'com.google.android.libraries.places:places:2.5.0'
+
+    implementation 'com.cloudinary:cloudinary-android:1.4.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    implementation 'com.firebase:firebase-client-android:2.5.2'
+    implementation 'com.firebase:geofire-android:3.1.0'
+    implementation 'com.firebaseui:firebase-ui:0.3.1'
+
+
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.5'
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    implementation 'com.google.firebase:firebase-database:20.0.3'
+
+    def lifecycle_version = "2.2.0"
+
+    // ViewModel and LiveData
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+
+    //    implementation('com.crashlytics.sdk.android:crashlytics:2.5.5@aar') {
+    //        transitive = true;
+    //    }
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
+
+    implementation('com.github.ihsanbal:LoggingInterceptor:3.1.0') {
+        exclude group: 'org.json', module: 'json'
+    }
+    implementation 'com.orhanobut:logger:2.2.0'
+}
+apply plugin: 'com.google.gms.google-services'

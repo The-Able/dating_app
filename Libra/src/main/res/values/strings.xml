@@ -1,0 +1,139 @@
+<resources>
+    <string name="app_name">Real Life</string>
+    <string name="app_names">Real Life</string>
+    <string name="choose_place">Choose the place</string>
+    <string name="you_are_in">you are in:</string>
+    <string name="nothing_found">Nothing Found In Your Area</string>
+    <string name="no_coffee_shops">No café registered in here</string>
+    <string name="no_coffee_shops_new_msg">Unfortunately there are no available places to connect near you.</string>
+    <string name="no_coffee_shops_nearby">No coffee shops were found nearby</string>
+    <string name="main_what_around">"Coffee Shops Nearby"</string>
+    <string name="main_notifications">Notifications</string>
+    <string name="off">off</string>
+    <string name="login">Log In</string>
+    <string name="terms_of_use_title">Terms and conditions</string>
+    <string name="terms_of_use_clickable">terms and conditions</string>
+    <string name="terms_of_use_label">by logging in you agree to the terms and conditions</string>
+    <string name="enter">Enter</string>
+    <string name="back">Back</string>
+    <string name="name">Name</string>
+    <string name="enter_you_name">Enter your name</string>
+    <string name="select_you_gender">Select you gender</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="already_exists">This is name already exists</string>
+    <string name="add_photo">Add photo</string>
+    <string name="error_saving_avatar">Error saving avatar</string>
+    <string name="select_image">Select Image</string>
+    <string name="error">Error</string>
+    <string name="chat">Chat</string>
+    <string name="send">Send</string>
+    <string name="no_ones_online">No one\'s online at the moment</string>
+    <string name="wait_for_more_people">No one is currently connected.</string>
+    <string name="please_display">please display it to us</string>
+    <string name="desert_time">We recommend you to share a dessert.</string>
+    <string name="successfully_registered">Libra rush hours turned on</string>
+    <string name="active">Active</string>
+    <string name="register">Register</string>
+    <string name="notifications">notifications</string>
+    <string name="rush_hours">rush hours</string>
+    <string name="title_rush_hours">Rush hours</string>
+    <string name="rush_hours_5_users">We will notify you when 5 more users are connected</string>
+    <string name="storage_not_available">Storage is not available</string>
+    <string name="no_camera">On device no camera</string>
+    <string name="photo_from_camera">Photo from camera</string>
+    <string name="photo_from_storage">Photo from storage</string>
+    <string name="units_distance" formatted="false">%1$smiles %2$skm</string>
+    <string name="distance_miles">%s miles</string>
+    <string name="distance_km">%s km</string>
+    <string name="distance_empty">nearby</string>
+    <string name="this_name_alredy_used">This name is already used</string>
+    <string name="wait">Wait</string>
+    <string name="login_error">Login error</string>
+    <string name="from">from</string>
+    <string name="new_message">new messages</string>
+    <string name="count_people_in_cafe">we will notify you when more than 5 %s are here!</string>
+    <string name="men">men</string>
+    <string name="ladies">ladies</string>
+    <string name="you_are_already_registered">You are already registered!</string>
+    <string name="cancel">Cancel</string>
+    <string name="limited_to_3_coffee_shops">You are limited to 3 coffee shops.</string>
+    <string name="count_visitors">Количество посетителей %s</string>
+    <string name="logo_l">I</string>
+    <string name="try_few_seconds">Try a few seconds</string>
+    <string name="logout">Logout</string>
+    <string name="have_left_cafe_area">You left the cafe and were signed out.</string>
+    <string name="not_reg_notification_cafe">You are not registered on the cafe</string>
+    <string name="time_over_in_cafe">Your session ended, and you were signed out.</string>
+    <string name="max_count_msg">%1$d messages are maximum!</string>
+    <string name="desserts_coupon">10% off desserts coupon</string>
+    <string name="desserts_you_like">You like each other</string>
+    <string name="are_you_sure_you_want_to_leave">Are you sure you want to leave?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="nikename_is_limited">Nikename is limited to %s characters</string>
+    <string name="no_one_connected">no one is connected</string>
+    <string name="login_now">Login Now</string>
+    <string name="distance_meters">%s Mts. Away</string>
+    <string name="distance_kms">%s Miles Away</string>
+    <string name="open_in_waze">Open in Waze</string>
+    <string name="noWazeAppFound">No Waze App Found</string>
+
+    <!-- 18+ dialog -->
+    <string name="age.dialog.title">Libra</string>
+    <string name="age.dialog.message">Are you over 18 years old?</string>
+    <string name="age.dialog.btn.positive">Yes</string>
+    <string name="age.dialog.btn.negative">No</string>
+
+    <string name="wine_title">Found someone?\nShare a bottle of wine together</string>
+    <string name="wine_btn_text">Continue</string>
+
+    <string name="login_times_title">Login times: <b>%s</b></string>
+    <string name="login_times">08:00 15:00 20:00</string>
+    <string name="time_left">%s left</string>
+    <string name="left_hour">%d Hrs</string>
+    <string name="left_minutes">%d Min</string>
+    <string name="left_sec">%d Sec</string>
+    <string name="login_to_chat">Login to chat</string>
+    <string name="type_here">Type Here</string>
+    <string name="terms_of_use">Terms of use</string>
+
+    <string name="facebook_app_id" translatable="false">381000255939552</string>
+
+    <string name="notification_log_in_time">עוד 20 דקות תוכלו להתחבר לאפליקציה! מוכנים להכיר את החצי השני שלכם? אל תפספסו את ההזדמנות!</string>
+    <!--  <string name="notification_someone_logged_in_man">מישהו התחבר עכשיו לאפליקציה בבית קפה %s אולי זה החצי השני שלך?</string>-->
+    <!--  <string name="notification_someone_logged_in_woman">מישהי התחבר עכשיו לאפליקציה בבית קפה %s אולי זה החצי השני שלך?</string>-->
+    <string name="notification_someone_logged_in_man">%s - מישהו התחבר עכשיו במקום</string>
+    <string name="notification_someone_logged_in_woman">%s - מישהו התחבר עכשיו במקום</string>
+    <string name="agree_text_login">I am 18 or over and I agree to the terms and conditions</string>
+    <string name="agree_message_login">You must agree to age and terms and conditions of app</string>
+    <string name="job_7_40_message">אפשר להתחבר לאפליקציה בעוד כעשרים דקות</string>
+
+    <string name="you_are_not_in_cafe">To use the app, you must physically go to one of the locations. Then connect to our chat to find a date.</string>
+    <string name="login_error_1">‎אפשר להתחבר לאפליקציה בימי שני וחמישי בין השעות 20:00–22:00</string>
+    <string name="login_error_2">‎אפשר להתחבר לאפליקציה בימי שני וחמישי בין השעות 20:00–22:00\n\n
+‎בכדי להתחבר לאפליקציה יש להגיע לבית הקפה</string>
+    <string name="login_error_3">‎אפשר להתחבר לאפליקציה בימי שני וחמישי בין השעות 20:00–22:00\n\n
+‎בכדי להתחבר לאפליקציה יש להגיע לבית הקפה פיזית</string>
+    <string name="distance">Distance</string>
+    <string name="man">Man</string>
+    <string name="woman">Woman</string>
+    <string name="geofence_transition_invalid_type">Invalid Geofence type</string>
+    <string name="background_message" ><b>Real Life</b> can access you location to find out wheather you are at place or not even app is closed if you logged in.To Use app location must allowed for whole time.</string>
+    <string name="place">Places</string>
+    <string name="no_user_new_msg">The user list is empty.\nPlease wait for more users.</string>
+    <string name="enter_your_message">Enter your message...</string>
+    <string name="what_is_you">What is your name?</string>
+    <string name="choose_your_gender">Choose your gender</string>
+    <string name="upload_your_photo">Upload your photo</string>
+
+    <string name="next_step">Next step</string>
+    <string name="i_m_18_years_old_or_older">I\'m 18 years old or older.</string>
+    <string name="agree_to_terms_of_use">Agree to terms of use</string>
+    <string name="age_message_login">You must be over 18 to log in to the app.</string>
+    <string name="who_s_online">Who\'s online?</string>
+    <string name="days_ago_">%d days ago</string>
+    <string name="hours_ago_">%d hours ago</string>
+    <string name="minute_ago">%d minutes ago</string>
+
+</resources>

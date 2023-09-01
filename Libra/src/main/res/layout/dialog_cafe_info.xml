@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+
+    <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginEnd="24dp"
+          android:layout_marginStart="24dp"
+          app:cardBackgroundColor="@color/app_white"
+          app:cardCornerRadius="12dp"
+          app:cardElevation="0dp"
+          >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="16dp"
+              >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                  android:id="@+id/imgCafeLogo"
+                  android:layout_width="100dp"
+                  android:layout_height="100dp"
+                  android:layout_marginTop="12dp"
+                  android:tint="@color/app_black_25"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toTopOf="parent"
+                  tools:background="@color/color_primary"
+                  />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                  android:id="@+id/tvTitle"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginEnd="30dp"
+                  android:layout_marginStart="30dp"
+                  android:layout_marginTop="16dp"
+                  android:textAppearance="@style/TextAppearance.MediumFonts.Large"
+                  app:layout_constrainedWidth="true"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/imgCafeLogo"
+                  tools:text="Lorem ipsum"
+                  />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                  android:id="@+id/tvAddress"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginEnd="30dp"
+                  android:layout_marginStart="30dp"
+                  android:gravity="center"
+                  android:textAppearance="@style/TextAppearance.MediumFonts.Small"
+                  app:layout_constrainedWidth="true"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                  tools:text="Lorem ipsum | Lorem ipsum"
+                  />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                  android:id="@+id/tvDistance"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginEnd="30dp"
+                  android:layout_marginStart="30dp"
+                  android:textAppearance="@style/TextAppearance.Light.Small"
+                  app:layout_constrainedWidth="true"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/tvAddress"
+                  tools:text="Lorem ipsum | Lorem ipsum"
+                  />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                  android:id="@+id/tvOpenHours"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginEnd="30dp"
+                  android:layout_marginStart="30dp"
+                  android:textAppearance="@style/TextAppearance.Light.Small"
+                  android:visibility="gone"
+                  app:layout_constrainedWidth="true"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/tvDistance"
+                  tools:text="Lorem ipsum | Lorem ipsum"
+                  />
+
+            <LinearLayout
+                  android:id="@+id/btnWaze"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="12dp"
+                  android:layout_marginEnd="24dp"
+                  android:layout_marginStart="24dp"
+                  android:layout_marginTop="16dp"
+                  android:background="@drawable/bt_btn_light_blue"
+                  android:gravity="center"
+                  android:orientation="horizontal"
+                  android:paddingBottom="8dp"
+                  android:paddingEnd="22dp"
+                  android:paddingStart="22dp"
+                  android:paddingTop="8dp"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/tvOpenHours"
+                  app:layout_constraintVertical_bias="0"
+                  >
+
+                <androidx.appcompat.widget.AppCompatImageView
+                      android:layout_width="30dp"
+                      android:layout_height="30dp"
+                      app:srcCompat="@drawable/ic_waze"
+                      />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginStart="8dp"
+                      android:text="@string/open_in_waze"
+                      android:textAllCaps="true"
+                      android:textAppearance="@style/TextAppearance.MediumFonts.Medium"
+                      />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+              android:id="@+id/imgClose"
+              android:layout_width="40dp"
+              android:layout_height="40dp"
+              android:layout_gravity="end|top"
+              android:layout_marginEnd="5dp"
+              android:layout_marginTop="5dp"
+              android:padding="5dp"
+              app:srcCompat="@drawable/ic_close"
+              />
+
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.libra.activitys.PhotoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:contentInsetEnd="0dp"
+            app:contentInsetStart="0dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/btn_back"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/space_10"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_action_back" />
+
+                <TextView
+                    android:id="@+id/cafe_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:lineSpacingExtra="1sp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/app_white"
+                    android:text="cafe_name"
+                    />
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:progress="45"
+            android:progressTint="@color/yellow_btn"
+            android:indeterminate="false"
+            app:trackThickness="4dp"
+            app:indicatorColor="@color/yellow_btn"
+            app:trackColor="@color/yellow_btn_30"
+            android:background="@color/app_white"
+            app:indeterminateAnimationType="disjoint"
+            app:indicatorDirectionLinear="leftToRight"
+            />
+
+        <include android:id="@+id/login_view" layout="@layout/new_login_view"/>
+        <include android:id="@+id/gender_view" layout="@layout/new_gender_selection_view"/>
+        <include android:id="@+id/photo_view" layout="@layout/new_photo_layout"/>
+
+    </LinearLayout>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_place_holder"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="340dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginLeft="8dp"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:layout_marginRight="8dp"-->
+<!--        android:layout_marginBottom="24dp"-->
+<!--        android:visibility="gone"-->
+<!--        android:contentDescription="@null"-->
+<!--        android:foreground="?attr/selectableItemBackground"-->
+<!--        android:scaleType="fitCenter"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/btn_login"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="@drawable/ic_placeholder_add_photo" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_circle"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:contentDescription="@null"-->
+<!--        android:visibility="gone"-->
+<!--        android:foreground="?attr/selectableItemBackground"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/iv_place_holder"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/iv_place_holder"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/iv_place_holder"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/iv_place_holder"-->
+<!--        app:srcCompat="@drawable/ic_add_circle_24dp"-->
+<!--        app:tint="@color/login_add_photo" />-->
+
+<!--    <com.theartofdev.edmodo.cropper.CropImageView xmlns:custom="http://schemas.android.com/apk/res-auto"-->
+<!--        android:id="@+id/iv_crop"-->
+<!--        android:layout_width="340dp"-->
+<!--        android:layout_height="340dp"-->
+<!--        android:visibility="gone"-->
+<!--        custom:cropAspectRatioX="1"-->
+<!--        custom:cropAspectRatioY="1"-->
+<!--        custom:cropFixAspectRatio="true"-->
+<!--        custom:cropGuidelines="onTouch"-->
+<!--        custom:cropScaleType="centerCrop"-->
+<!--        custom:cropShape="rectangle"-->
+<!--        custom:layout_constraintBottom_toBottomOf="@+id/iv_place_holder"-->
+<!--        custom:layout_constraintEnd_toEndOf="@+id/iv_place_holder"-->
+<!--        custom:layout_constraintStart_toStartOf="@+id/iv_place_holder"-->
+<!--        custom:layout_constraintTop_toTopOf="@+id/iv_place_holder" />-->
+
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/btn_login"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginLeft="8dp"-->
+<!--        android:layout_marginBottom="8dp"-->
+<!--        android:fontFamily="@font/roboto_bold"-->
+<!--        android:minHeight="48dp"-->
+<!--        android:text="@string/login"-->
+<!--        android:visibility="gone"-->
+<!--        android:textAllCaps="true"-->
+<!--        android:textColor="@color/color_primary"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:backgroundTint="@color/app_white"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/btn_back" />-->
+
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:layout_marginRight="8dp"-->
+<!--        android:layout_marginBottom="8dp"-->
+<!--        android:fontFamily="@font/roboto_bold"-->
+<!--        android:minHeight="48dp"-->
+<!--        android:text="@string/back"-->
+<!--        android:textAllCaps="true"-->
+<!--        android:textColor="@color/color_primary"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:visibility="gone"-->
+<!--        app:backgroundTint="@color/app_white"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/btn_login"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+<!--    &lt;!&ndash;<Button&ndash;&gt;-->
+<!--    &lt;!&ndash;android:id="@+id/btn_terms"&ndash;&gt;-->
+<!--    &lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+<!--    &lt;!&ndash;android:layout_height="40dp"&ndash;&gt;-->
+<!--    &lt;!&ndash;android:background="@color/app_transparent"&ndash;&gt;-->
+<!--    &lt;!&ndash;android:foreground="?selectableItemBackground"&ndash;&gt;-->
+<!--    &lt;!&ndash;android:paddingEnd="16dp"&ndash;&gt;-->
+<!--    &lt;!&ndash;android:paddingStart="16dp"&ndash;&gt;-->
+<!--    &lt;!&ndash;android:text="@string/terms_of_use"&ndash;&gt;-->
+<!--    &lt;!&ndash;android:textAllCaps="false"&ndash;&gt;-->
+<!--    &lt;!&ndash;android:textColor="@color/app_white"&ndash;&gt;-->
+<!--    &lt;!&ndash;android:textSize="20sp"&ndash;&gt;-->
+<!--    &lt;!&ndash;android:theme="@style/ThemeButton.White"&ndash;&gt;-->
+<!--    &lt;!&ndash;app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+<!--    &lt;!&ndash;app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+<!--    &lt;!&ndash;app:layout_constraintHorizontal_bias="0"&ndash;&gt;-->
+<!--    &lt;!&ndash;app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+<!--    &lt;!&ndash;style="@style/TextAppearance.Light"&ndash;&gt;-->
+<!--    &lt;!&ndash;/>&ndash;&gt;-->
+
+<!--    <androidx.constraintlayout.widget.Guideline-->
+<!--        android:id="@+id/guidelineBottom"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:visibility="gone"-->
+<!--        app:layout_constraintGuide_percent="0.92" />-->
+
+<!--    <androidx.appcompat.widget.AppCompatTextView-->
+<!--        android:id="@+id/tvTerms"-->
+<!--        style="@style/TextAppearance.Light"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/terms_of_use_label"-->
+<!--        android:textColor="@color/app_white"-->
+<!--        android:textSize="16sp"-->
+<!--        android:visibility="gone"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/btn_login"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/btn_back"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_login"-->
+<!--        app:layout_constraintVertical_bias="0.2" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

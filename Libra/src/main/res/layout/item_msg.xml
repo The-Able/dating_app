@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:layout_marginEnd="50dp"
+    android:layout_marginBottom="12dp"
+    android:gravity="bottom"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="20dp"
+        app:cardPreventCornerOverlap="true">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_user_avatar_chat"
+            android:contentDescription="@null"
+            tools:src="@drawable/ic_placeholder_add_photo" />
+    </androidx.cardview.widget.CardView>
+
+    <com.libra.view.TriangleView
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:visibility="gone"
+        app:tvColor="@color/bg_msg_my" />
+
+    <TextView
+        android:id="@+id/tv_msg"
+        style="@style/TextAppearance.LatoRegular.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_10"
+        android:background="@drawable/bg_msg_chat"
+        android:fontFamily="@font/geomanist_book"
+        android:padding="12dp"
+        android:textColor="@color/app_black"
+        tools:text="Test dljdas sda;kjf  asd;fkj" />
+
+</LinearLayout>

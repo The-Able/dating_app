@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_white"
+    >
+
+  <!--<android.support.v4.widget.SwipeRefreshLayout-->
+  <!--android:id="@+id/swipe_refresh"-->
+  <!--android:layout_width="match_parent"-->
+  <!--android:layout_height="wrap_content">-->
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recycler"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:clipToPadding="false"
+      android:scrollbarStyle="outsideOverlay"
+      android:scrollbars="vertical"
+      />
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/vEmptyView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="?attr/colorPrimary"
+      android:visibility="gone"
+      >
+
+    <TextView
+        android:id="@+id/tvEmptyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/logo_l"
+        android:textColor="@color/color_accent"
+        android:textSize="64sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvEmptyText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/TextAppearance.KeepCalmMedium.ExtraGiant"
+        />
+
+    <TextView
+        android:id="@+id/tvEmptyText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:gravity="center"
+        android:text="@string/no_coffee_shops_nearby"
+        android:textColor="@color/color_accent"
+        app:layout_constraintVertical_bias="0.45"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/TextAppearance.Light.Large"
+        />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+  <ProgressBar
+      android:id="@+id/pb"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      />
+
+</FrameLayout>

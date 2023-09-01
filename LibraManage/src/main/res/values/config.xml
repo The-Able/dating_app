@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--<string name="google_api_key">AIzaSyCxGz9J2NaHsGniCl1o3Gm0NYvH8CwmrhA</string>-->
+  <!--<string name="places_key">AIzaSyAhlJKAN597A_x_zd2TS2Y8WgxM_DtzlZM</string>-->
+  <string name="places_key">AIzaSyCJBZBtmE0M4DQUhQKeura9zPIcq1v_Q6o</string>
+
+  <!--cloudinary-->
+  <string name="cloud_name">dab3faokx</string>
+  <string name="cloud_api_key">651165513729239</string>
+  <string name="cloud_api_secret">v-ydBbfwCe78ONV0fUaTO9hPp0o</string>
+</resources>

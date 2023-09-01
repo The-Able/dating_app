@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="black_25">#40000000</color>
+    <color name="app_black_25">#25000000</color>
+    <color name="color_primary">#272f37</color>
+    <color name="app_black">#ff000000</color>
+    <color name="light_blue">#41D4FF</color>
+    <color name="purple_color">#d53e64</color>
+    <color name="divider_gray_1">#d4d4d4</color>
+
+    <color name="restau_color">#7932CE</color>
+    <color name="park_color">#688E26</color>
+    <color name="gym_color">#6699CC</color>
+    <color name="off_color">#345995</color>
+    <color name="shopp_color">#D9AA33</color>
+    <color name="cup_color">#5E548E</color>
+</resources>

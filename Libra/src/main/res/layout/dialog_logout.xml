@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:orientation="vertical"
+      android:background="@drawable/bg_dialog"
+      android:backgroundTint="@color/app_white"
+      android:padding="24dp"
+      >
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text="@string/are_you_sure_you_want_to_leave"
+        style="@style/TextAppearance.Regular.Large"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        >
+
+      <Button
+          android:id="@+id/btn_negative"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginEnd="8dp"
+          android:layout_marginRight="8dp"
+          android:minWidth="100dp"
+          android:stateListAnimator="@null"
+          android:text="@string/no"
+          android:textAllCaps="true"
+          android:textColor="@color/app_white"
+          android:textSize="@dimen/text_size_micro"
+          android:fontFamily="@font/geomanist_book"
+          android:theme="@style/ThemeButton.Primary"
+          style="?attr/buttonStyleSmall"
+          />
+
+      <Button
+          android:id="@+id/btn_positive"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="8dp"
+          android:layout_marginStart="8dp"
+          android:minWidth="100dp"
+          android:stateListAnimator="@null"
+          android:text="@string/yes"
+          android:textAllCaps="true"
+          android:fontFamily="@font/geomanist_book"
+          android:textColor="@color/app_white"
+          android:textSize="@dimen/text_size_micro"
+          android:theme="@style/ThemeButton.Primary"
+          style="?attr/buttonStyleSmall"
+          />
+    </LinearLayout>
+
+
+  </LinearLayout>
+
+  <ImageView
+      android:id="@+id/iv_close"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentRight="true"
+      android:layout_marginEnd="4dp"
+      android:layout_marginRight="4dp"
+      android:layout_marginTop="4dp"
+      android:contentDescription="@null"
+      app:srcCompat="@drawable/ic_close_24dp"
+      app:tint="@color/app_black" />
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="top"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:padding="16dp">
+
+    <TextView
+        style="@style/TextAppearance.Light.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/not_reg_notification_cafe"/>
+
+    <!--<ImageView-->
+        <!--android:layout_width="24dp"-->
+        <!--android:layout_height="24dp"-->
+        <!--android:layout_marginTop="4dp"-->
+        <!--android:contentDescription="@string/app_name"-->
+        <!--app:srcCompat="@drawable/ic_sour_smile"/>-->
+</LinearLayout>

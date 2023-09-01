@@ -1,0 +1,106 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_accent</item>
+        <item name="colorControlHighlight">@color/color_accent_50</item>
+        <item name="android:navigationBarColor" tools:targetApi="21">@color/color_primary_dark
+        </item>
+        <item name="android:statusBarColor">@color/brand_color</item>
+        <item name="android:windowBackground">@color/app_white</item>
+    </style>
+
+    <!-- theme activity-->
+    <style name="ThemeActivity" parent="AppTheme"/>
+
+    <style name="ThemeActivity.Login">
+        <item name="android:windowBackground">@color/color_primary</item>
+    </style>
+
+    <style name="ThemeActivity.Cafe">
+        <item name="android:windowBackground">@color/app_white</item>
+    </style>
+
+    <!-- theme dialog-->
+    <style name="ThemeDialog" parent="Animation.AppCompat.Dialog"/>
+
+    <style name="ThemeDialog.Transparent">
+        <item name="android:windowBackground">@color/app_transparent</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <!-- style buttons-->
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:stateListAnimator" tools:targetApi="21">@null</item>
+    </style>
+
+    <!--theme buttons-->
+    <style name="ThemeButton" parent="AppTheme">
+        <item name="android:buttonStyle">@style/ButtonStyle</item>
+    </style>
+
+    <style name="ThemeButton.Red">
+        <item name="colorControlHighlight">@color/app_white_50</item>
+        <item name="colorButtonNormal">@color/app_red</item>
+    </style>
+
+    <style name="ThemeButton.White">
+        <item name="colorControlHighlight">@color/color_accent_50</item>
+        <item name="colorButtonNormal">@color/app_white</item>
+    </style>
+
+    <style name="ThemeButton.Transparent">
+        <item name="colorControlHighlight">@color/color_accent_50</item>
+        <item name="colorButtonNormal">@color/app_transparent</item>
+    </style>
+
+    <style name="ThemeButton.Primary">
+        <item name="colorControlHighlight">@color/app_white_50</item>
+        <item name="colorButtonNormal">@color/yellow_btn</item>
+        <item name="android:colorAccent">@color/yellow_btn</item>
+    </style>
+
+    <style name="ThemeButton.Accent">
+        <item name="colorControlHighlight">@color/app_white_50</item>
+        <item name="colorButtonNormal">@color/color_accent</item>
+    </style>
+
+    <!-- checkbox style-->
+    <style name="ThemeCheckBox" parent="AppTheme">
+        <item name="colorAccent">@color/color_primary</item>
+    </style>
+
+    <style name="DialogFragmentStyle">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@color/app_black_25</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateHidden|adjustResize</item>
+<!--        <item name="android:gravity">center</item>-->
+    </style>
+
+    <style name="input_edit_style" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textSize">16sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorControlActivated">@color/yellow_btn</item>
+        <item name="colorPrimary">@color/yellow_btn</item>
+        <item name="android:colorPrimary">@color/yellow_btn</item>
+    </style>
+
+    <style name="checkbox_theme" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="colorAccent">@color/yellow_btn</item>
+        <item name="android:textColorSecondary">@color/uncheck_color</item>
+    </style>
+
+    <style name="Radio_theme" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="colorControlActivated">@color/yellow_btn</item>
+        <item name="android:textSize">16dp</item>
+
+    </style>
+
+</resources>

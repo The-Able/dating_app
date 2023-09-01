@@ -1,0 +1,307 @@
+{
+  "project_info": {
+    "project_number": "127592622652",
+    "firebase_url": "https://libradev.firebaseio.com",
+    "project_id": "firebase-libradev",
+    "storage_bucket": "firebase-libradev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127592622652:android:a09009eb869840dd",
+        "android_client_info": {
+          "package_name": "com.android.libra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127592622652-m2cdcfdoj6icqsvopalibcc6suqh0iek.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3I0uzvt_4kpYLtQsNr7kqVS6EQz6CeMY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127592622652-m2cdcfdoj6icqsvopalibcc6suqh0iek.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "127592622652-h8n96krv8bdjspaag57jjl4s25gviuge.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "il.co.realLife.FIRMessage"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127592622652:android:451ee32ca6e32d1d",
+        "android_client_info": {
+          "package_name": "com.android.libramanage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127592622652-m2cdcfdoj6icqsvopalibcc6suqh0iek.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3I0uzvt_4kpYLtQsNr7kqVS6EQz6CeMY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127592622652-m2cdcfdoj6icqsvopalibcc6suqh0iek.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "127592622652-h8n96krv8bdjspaag57jjl4s25gviuge.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "il.co.realLife.FIRMessage"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127592622652:android:2febe7503eb2e4eb0d3139",
+        "android_client_info": {
+          "package_name": "com.dating.reallife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127592622652-m2cdcfdoj6icqsvopalibcc6suqh0iek.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3I0uzvt_4kpYLtQsNr7kqVS6EQz6CeMY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127592622652-m2cdcfdoj6icqsvopalibcc6suqh0iek.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "127592622652-h8n96krv8bdjspaag57jjl4s25gviuge.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "il.co.realLife.FIRMessage"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127592622652:android:c4e1b2c541716a08",
+        "android_client_info": {
+          "package_name": "com.dor.instant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127592622652-m2cdcfdoj6icqsvopalibcc6suqh0iek.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3I0uzvt_4kpYLtQsNr7kqVS6EQz6CeMY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127592622652-m2cdcfdoj6icqsvopalibcc6suqh0iek.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "127592622652-h8n96krv8bdjspaag57jjl4s25gviuge.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "il.co.realLife.FIRMessage"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127592622652:android:c79fc1e0b0583be9",
+        "android_client_info": {
+          "package_name": "com.dor.monogamy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127592622652-vlt34fqvqrqlj9sud7dfjgdd6raef8e2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dor.monogamy",
+            "certificate_hash": "4ab83a163fa2258d6929af260e2c5c2194c8d697"
+          }
+        },
+        {
+          "client_id": "127592622652-m2cdcfdoj6icqsvopalibcc6suqh0iek.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3I0uzvt_4kpYLtQsNr7kqVS6EQz6CeMY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127592622652-m2cdcfdoj6icqsvopalibcc6suqh0iek.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "127592622652-h8n96krv8bdjspaag57jjl4s25gviuge.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "il.co.realLife.FIRMessage"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127592622652:android:ab76562b8b56448b0d3139",
+        "android_client_info": {
+          "package_name": "com.dor.reallife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127592622652-m2cdcfdoj6icqsvopalibcc6suqh0iek.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3I0uzvt_4kpYLtQsNr7kqVS6EQz6CeMY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127592622652-m2cdcfdoj6icqsvopalibcc6suqh0iek.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "127592622652-h8n96krv8bdjspaag57jjl4s25gviuge.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "il.co.realLife.FIRMessage"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127592622652:android:6478313ee813957a",
+        "android_client_info": {
+          "package_name": "com.libra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127592622652-m2cdcfdoj6icqsvopalibcc6suqh0iek.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3I0uzvt_4kpYLtQsNr7kqVS6EQz6CeMY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127592622652-m2cdcfdoj6icqsvopalibcc6suqh0iek.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "127592622652-h8n96krv8bdjspaag57jjl4s25gviuge.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "il.co.realLife.FIRMessage"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127592622652:android:de2377a7dcced2c3",
+        "android_client_info": {
+          "package_name": "com.libra.manage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127592622652-m2cdcfdoj6icqsvopalibcc6suqh0iek.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3I0uzvt_4kpYLtQsNr7kqVS6EQz6CeMY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127592622652-m2cdcfdoj6icqsvopalibcc6suqh0iek.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "127592622652-h8n96krv8bdjspaag57jjl4s25gviuge.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "il.co.realLife.FIRMessage"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

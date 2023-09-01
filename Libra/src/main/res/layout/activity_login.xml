@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:background="@color/yellow_btn">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLoginBlock"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.18" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_chevron_back" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCafeName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        android:maxLines="2"
+        android:textAppearance="@style/TextAppearance.Bold.Large"
+        android:textColor="@color/app_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Lorem Ipsum" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_to_chat"
+        android:textAppearance="@style/TextAppearance.Light.Micro"
+        android:textColor="@color/color_accent"
+        app:layout_constraintEnd_toEndOf="@+id/tvCafeName"
+        app:layout_constraintStart_toStartOf="@+id/tvCafeName"
+        app:layout_constraintTop_toBottomOf="@+id/tvCafeName" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:text="@string/name"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.MediumFonts.Small"
+        android:textColor="@color/app_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideLoginBlock" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:hint="@string/type_here"
+        android:textAppearance="@style/TextAppearance.Light.Small"
+        android:textColor="@color/app_white"
+        android:textColorHint="@color/v_light_grey"
+        app:backgroundTint="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameTitle" />
+
+    <RadioGroup
+        android:id="@+id/rgSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtName">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bg_checkable_rounded_white"
+            android:button="@null"
+            android:gravity="center"
+            android:minWidth="100dp"
+            android:paddingStart="22dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="22dp"
+            android:paddingBottom="8dp"
+            android:text="@string/gender_male"
+            android:textAppearance="@style/TextAppearance.MediumFonts.Small"
+            android:textColor="@color/color_white_radio_button" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/bg_checkable_rounded_white"
+            android:button="@null"
+            android:gravity="center"
+            android:minWidth="100dp"
+            android:paddingStart="22dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="22dp"
+            android:paddingBottom="8dp"
+            android:text="@string/gender_female"
+            android:textAppearance="@style/TextAppearance.MediumFonts.Small"
+            android:textColor="@color/color_white_radio_button" />
+
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/agree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:buttonTint="@color/app_white"
+        android:paddingStart="5dp"
+        android:paddingEnd="0dp"
+        android:text="@string/agree_text_login"
+        android:textColor="@color/app_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgSex" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnEnter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="@color/app_white"
+        android:minHeight="46dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:text="@string/enter"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.MediumFonts.Large"
+        android:textColor="@color/app_black"
+        app:cornerRadius="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agree"
+        app:rippleColor="@color/color_accent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnTerms"
+        android:theme="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/terms_of_use"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.MediumFonts.Micro"
+        android:textColor="@color/app_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEnter" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

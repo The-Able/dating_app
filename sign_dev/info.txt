@@ -1,0 +1,8 @@
+name: keystoreDev
+pass keystore: testDev
+
+aliase: devKey
+pass:aliase: devKeyPass
+
+management aliase: management
+management pass: devKeyPass

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/brand_color"
+    android:layerType="software">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:showIn="@layout/activity_host_with_toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_toolbar_left"
+                style="?attr/toolbarNavigationButtonStyle"
+                android:layout_width="?actionBarSize"
+                android:layout_height="?actionBarSize"
+                android:contentDescription="@string/app_name"
+                android:padding="14dp"
+                android:scaleType="fitCenter"
+                tools:src="@drawable/ic_brightness_1_24dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_height="?actionBarSize"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:fontFamily="@font/roboto_bold"
+                android:lineSpacingExtra="1sp"
+                android:includeFontPadding="false"
+                android:textColor="@color/app_white"
+                android:visibility="visible"
+                tools:text="@string/app_names" />
+
+<!--            <ImageView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="?actionBarSize"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:includeFontPadding="false"-->
+<!--                android:padding="15dp"-->
+<!--                android:visibility="gone"-->
+<!--                android:scaleType="centerInside"-->
+<!--                android:src="@drawable/logo_transparent"-->
+<!--                android:textColor="@color/color_accent" />-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--&gt;-->
+
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/tv_rush"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentEnd="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginEnd="12dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginRight="12dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginTop="80dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:includeFontPadding="false"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:rotation="-10"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="@string/rush_hours"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="@color/color_accent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:visibility="invisible"&ndash;&gt;-->
+            <!--&lt;!&ndash;tools:visibility="visible"&ndash;&gt;-->
+            <!--&lt;!&ndash;style="@style/TextAppearance.LatoItalic.Large"&ndash;&gt;-->
+            <!--&lt;!&ndash;/>&ndash;&gt;-->
+            <!--</RelativeLayout>-->
+
+            <ImageButton
+                android:id="@+id/btn_toolbar_right"
+                style="?attr/toolbarNavigationButtonStyle"
+                android:layout_width="?actionBarSize"
+                android:layout_height="?actionBarSize"
+                android:contentDescription="@string/app_name"
+                android:padding="14dp"
+                android:scaleType="fitCenter"
+                android:tint="@color/color_accent"
+                tools:src="@drawable/ic_place_24dp" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+</FrameLayout>

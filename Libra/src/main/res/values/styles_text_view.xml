@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="text_size_micro">12sp</dimen>
+  <dimen name="text_size_small">14sp</dimen>
+  <dimen name="text_size_medium">16sp</dimen>
+  <dimen name="text_size_large">20sp</dimen>
+  <dimen name="text_size_extra_large">24sp</dimen>
+  <dimen name="text_size_xx_large">28sp</dimen>
+  <dimen name="text_size_giant">34sp</dimen>
+  <dimen name="text_size_extra_giant">48sp</dimen>
+
+  <style name="TextAppearance" parent="android:TextAppearance"/>
+
+  <style name="TextAppearance.Regular">
+    <item name="fontPath">fonts/Geomanist-Regular.otf</item>
+  </style>
+
+  <style name="TextAppearance.Bold">
+    <item name="fontPath">fonts/Geomanist-Bold.otf</item>
+  </style>
+
+  <style name="TextAppearance.Light">
+    <item name="fontPath">fonts/Geomanist-Light.otf</item>
+  </style>
+
+  <style name="TextAppearance.MediumFonts">
+    <item name="fontPath">fonts/Geomanist-Medium.otf</item>
+  </style>
+
+  <style name="TextAppearance.Thin">
+    <item name="fontPath">fonts/Geomanist-Thin.otf</item>
+  </style>
+
+  <style name="TextAppearance.Book">
+    <item name="fontPath">fonts/Geomanist-Book.otf</item>
+  </style>
+
+  <style name="TextAppearance.LatoRegular">
+    <item name="fontPath">fonts/Lato-Regular.ttf</item>
+  </style>
+
+  <style name="TextAppearance.LatoItalic">
+    <item name="fontPath">fonts/Lato-Italic.ttf</item>
+  </style>
+
+  <style name="TextAppearance.KeepCalmMedium">
+    <item name="fontPath">fonts/KeepCalm-Medium.ttf</item>
+  </style>
+
+  <style name="TextAppearance.Seravek">
+    <item name="fontPath">fonts/Seravek.ttc</item>
+  </style>
+
+  <!-- size fonts for regular-->
+  <style name="TextAppearance.Regular.Micro">
+    <item name="android:textSize">@dimen/text_size_micro</item>
+  </style>
+
+  <style name="TextAppearance.Regular.Small">
+    <item name="android:textSize">@dimen/text_size_small</item>
+  </style>
+
+  <style name="TextAppearance.Regular.Medium">
+    <item name="android:textSize">@dimen/text_size_medium</item>
+  </style>
+
+  <style name="TextAppearance.Regular.Large">
+    <item name="android:textSize">@dimen/text_size_large</item>
+  </style>
+
+  <style name="TextAppearance.Regular.ExtraLarge">
+    <item name="android:textSize">@dimen/text_size_extra_large</item>
+  </style>
+
+  <style name="TextAppearance.Regular.Giant">
+    <item name="android:textSize">@dimen/text_size_giant</item>
+  </style>
+
+  <!-- size fonts for Bold-->
+  <style name="TextAppearance.Bold.Micro">
+    <item name="android:textSize">@dimen/text_size_micro</item>
+  </style>
+
+  <style name="TextAppearance.Bold.Small">
+    <item name="android:textSize">@dimen/text_size_small</item>
+  </style>
+
+  <style name="TextAppearance.Bold.Medium">
+    <item name="android:textSize">@dimen/text_size_medium</item>
+  </style>
+
+  <style name="TextAppearance.Bold.Large">
+    <item name="android:textSize">@dimen/text_size_large</item>
+  </style>
+
+  <style name="TextAppearance.Bold.ExtraLarge">
+    <item name="android:textSize">@dimen/text_size_extra_large</item>
+  </style>
+
+  <style name="TextAppearance.Bold.Giant">
+    <item name="android:textSize">@dimen/text_size_giant</item>
+  </style>
+
+  <style name="TextAppearance.Bold.ExtraGiant">
+    <item name="android:textSize">@dimen/text_size_extra_giant</item>
+  </style>
+
+  <!-- size fonts for Light-->
+  <style name="TextAppearance.Light.Micro">
+    <item name="android:textSize">@dimen/text_size_micro</item>
+  </style>
+
+  <style name="TextAppearance.Light.Small">
+    <item name="android:textSize">@dimen/text_size_small</item>
+  </style>
+
+  <style name="TextAppearance.Light.Medium">
+    <item name="android:textSize">@dimen/text_size_medium</item>
+  </style>
+
+  <style name="TextAppearance.Light.Large">
+    <item name="android:textSize">@dimen/text_size_large</item>
+  </style>
+
+  <style name="TextAppearance.Light.ExtraLarge">
+    <item name="android:textSize">@dimen/text_size_extra_large</item>
+  </style>
+
+  <style name="TextAppearance.Light.Giant">
+    <item name="android:textSize">@dimen/text_size_giant</item>
+  </style>
+
+  <style name="TextAppearance.Light.ExtraGiant">
+    <item name="android:textSize">@dimen/text_size_extra_giant</item>
+  </style>
+
+  <!-- size fonts for Light-->
+  <style name="TextAppearance.MediumFonts.Micro">
+    <item name="android:textSize">@dimen/text_size_micro</item>
+  </style>
+
+  <style name="TextAppearance.MediumFonts.Small">
+    <item name="android:textSize">@dimen/text_size_small</item>
+  </style>
+
+  <style name="TextAppearance.MediumFonts.Medium">
+    <item name="android:textSize">@dimen/text_size_medium</item>
+  </style>
+
+  <style name="TextAppearance.MediumFonts.Large">
+    <item name="android:textSize">@dimen/text_size_large</item>
+  </style>
+
+  <style name="TextAppearance.MediumFonts.ExtraLarge">
+    <item name="android:textSize">@dimen/text_size_extra_large</item>
+  </style>
+
+  <style name="TextAppearance.MediumFonts.Giant">
+    <item name="android:textSize">@dimen/text_size_giant</item>
+  </style>
+
+  <!-- size fonts for Light-->
+  <style name="TextAppearance.Thin.Micro">
+    <item name="android:textSize">@dimen/text_size_micro</item>
+  </style>
+
+  <style name="TextAppearance.Thin.Small">
+    <item name="android:textSize">@dimen/text_size_small</item>
+  </style>
+
+  <style name="TextAppearance.Thin.Medium">
+    <item name="android:textSize">@dimen/text_size_medium</item>
+  </style>
+
+  <style name="TextAppearance.Thin.Large">
+    <item name="android:textSize">@dimen/text_size_large</item>
+  </style>
+
+  <style name="TextAppearance.Thin.ExtraLarge">
+    <item name="android:textSize">@dimen/text_size_extra_large</item>
+  </style>
+
+  <style name="TextAppearance.Thin.Giant">
+    <item name="android:textSize">@dimen/text_size_giant</item>
+  </style>
+
+  <!-- size fonts for Light-->
+  <style name="TextAppearance.Book.Micro">
+    <item name="android:textSize">@dimen/text_size_micro</item>
+  </style>
+
+  <style name="TextAppearance.Book.Small">
+    <item name="android:textSize">@dimen/text_size_small</item>
+  </style>
+
+  <style name="TextAppearance.Book.Medium">
+    <item name="android:textSize">@dimen/text_size_medium</item>
+  </style>
+
+  <style name="TextAppearance.Book.Large">
+    <item name="android:textSize">@dimen/text_size_large</item>
+  </style>
+
+  <style name="TextAppearance.Book.ExtraLarge">
+    <item name="android:textSize">@dimen/text_size_extra_large</item>
+  </style>
+
+  <style name="TextAppearance.Book.Giant">
+    <item name="android:textSize">@dimen/text_size_giant</item>
+  </style>
+
+  <style name="TextAppearance.Book.ExtraGiant">
+    <item name="android:textSize">@dimen/text_size_extra_giant</item>
+  </style>
+
+  <!-- size fonts for Lato regular-->
+  <style name="TextAppearance.LatoRegular.Micro">
+    <item name="android:textSize">@dimen/text_size_micro</item>
+  </style>
+
+  <style name="TextAppearance.LatoRegular.Small">
+    <item name="android:textSize">@dimen/text_size_small</item>
+  </style>
+
+  <style name="TextAppearance.LatoRegular.Medium">
+    <item name="android:textSize">@dimen/text_size_medium</item>
+  </style>
+
+  <style name="TextAppearance.LatoRegular.Large">
+    <item name="android:textSize">@dimen/text_size_large</item>
+  </style>
+
+  <style name="TextAppearance.LatoRegular.ExtraLarge">
+    <item name="android:textSize">@dimen/text_size_extra_large</item>
+  </style>
+
+  <style name="TextAppearance.LatoRegular.Giant">
+    <item name="android:textSize">@dimen/text_size_giant</item>
+  </style>
+
+  <style name="TextAppearance.LatoRegular.ExtraGiant">
+    <item name="android:textSize">@dimen/text_size_extra_giant</item>
+  </style>
+
+  <!-- size fonts for Lato regular-->
+  <style name="TextAppearance.LatoItalic.Large">
+    <item name="android:textSize">@dimen/text_size_large</item>
+  </style>
+
+  <!-- size fonts for KeepCalm Medium -->
+  <style name="TextAppearance.KeepCalmMedium.ExtraGiant">
+    <item name="android:textSize">@dimen/text_size_extra_giant</item>
+  </style>
+</resources>

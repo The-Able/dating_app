@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginEnd="15dp"
+    app:cardCornerRadius="15dp"
+    android:elevation="3dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/container_avatar"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="5dp"
+            app:cardCornerRadius="40dp"
+            android:layout_height="wrap_content"
+            app:cardPreventCornerOverlap="true"
+            android:foreground="?attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="@null"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/ic_placeholder_add_photo" />
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/TextAppearance.MediumFonts.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/geomanist_book"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/app_black"
+                android:lineSpacingExtra="1sp"
+                tools:text="Nicole" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_chat"
+                style="@style/TextAppearance.Bold.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/chat"
+                android:textAllCaps="false"
+                android:paddingTop="@dimen/space_10"
+                android:paddingBottom="@dimen/space_10"
+                android:textColor="@color/app_white"
+                app:backgroundTint="@color/yellow_btn"
+                app:cornerRadius="8dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_new_msg"
+                style="@style/TextAppearance.MediumFonts.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btn_chat"
+                android:layout_alignEnd="@id/btn_chat"
+                android:layout_alignRight="@id/btn_chat"
+                android:background="@drawable/bg_new_msg_odd"
+                android:backgroundTint="@color/brand_color"
+                android:elevation="6dp"
+                android:gravity="center"
+                android:minWidth="22dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:textColor="@color/app_white"
+                android:textSize="12sp"
+                android:visibility="invisible"
+                tools:text="1"
+                tools:visibility="visible" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

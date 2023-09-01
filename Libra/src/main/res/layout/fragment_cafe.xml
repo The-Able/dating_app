@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_black_e5"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+
+  <LinearLayout
+      android:id="@+id/llTimer"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/purple_color"
+      android:orientation="horizontal"
+      android:padding="16dp"
+      >
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvLoginTimesTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_weight="1"
+        android:maxLines="2"
+        android:textAppearance="@style/TextAppearance.Light.Micro"
+        android:textColor="@color/app_white"
+        app:autoSizeMaxTextSize="13sp"
+        app:autoSizeMinTextSize="10sp"
+        app:autoSizeTextType="uniform"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.MediumFonts.Micro"
+        android:textColor="@color/orange_text"
+        android:textSize="13sp"
+        android:visibility="gone"
+        tools:text="19 min 30 sec left"
+        />
+
+  </LinearLayout>
+
+  <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+      android:id="@+id/swipe_refresh"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:padding="4dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical"
+        />
+
+  </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

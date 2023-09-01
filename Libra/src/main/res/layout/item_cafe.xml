@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:foreground="?attr/selectableItemBackground"
+             android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/iv_cafe"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:tint="@color/app_black_25"
+        app:srcCompat="@drawable/ic_restaurant_menu_24dp"/>
+</FrameLayout>

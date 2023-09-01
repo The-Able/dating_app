@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    >
+
+  <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="16dp"
+      android:layout_marginRight="16dp"
+      android:layout_weight="1"
+      android:gravity="center_vertical"
+      android:orientation="vertical"
+      >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_primary_dark"
+        tools:text="TestCafe"
+        android:textSize="22sp"
+        style="@style/TextAppearance.Book.Large"
+        />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/color_primary_dark"
+        android:textSize="13sp"
+        tools:text="Test address 10, City 2"
+        style="@style/TextAppearance.Regular.Small"
+        />
+  </LinearLayout>
+
+  <Button
+      android:id="@+id/off"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/off"
+      android:textAllCaps="true"
+      android:textColor="@color/app_white"
+      android:theme="@style/ThemeButton.Red"
+      style="@style/TextAppearance.Bold.Medium"
+      />
+
+</LinearLayout>

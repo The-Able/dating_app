@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_black_e5"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:scrollbarStyle="outsideOverlay" />
+
+    <ScrollView
+        android:id="@+id/ll_lock_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <ImageView
+                android:id="@+id/iv_lock_1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:contentDescription="@string/app_name"
+                android:padding="2dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_lock_msg" />
+
+            <ImageView
+                android:id="@+id/iv_lock_2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="2dp"
+                android:contentDescription="@string/app_name"
+                android:padding="2dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_lock_msg" />
+
+            <ImageView
+                android:id="@+id/iv_lock_3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="2dp"
+                android:contentDescription="@string/app_name"
+                android:padding="2dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_lock_msg" />
+
+            <ImageView
+                android:id="@+id/iv_lock_4"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="2dp"
+                android:contentDescription="@string/app_name"
+                android:padding="2dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_lock_msg" />
+
+            <ImageView
+                android:id="@+id/iv_lock_5"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="2dp"
+                android:contentDescription="@string/app_name"
+                android:padding="2dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_lock_msg" />
+
+            <ImageView
+                android:id="@+id/iv_lock_6"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="2dp"
+                android:contentDescription="@string/app_name"
+                android:padding="2dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_lock_msg" />
+
+            <ImageView
+                android:id="@+id/iv_lock_7"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="2dp"
+                android:contentDescription="@string/app_name"
+                android:padding="2dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_lock_msg" />
+
+            <ImageView
+                android:id="@+id/iv_lock_8"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="2dp"
+                android:contentDescription="@string/app_name"
+                android:padding="2dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_lock_msg" />
+
+            <ImageView
+                android:id="@+id/iv_lock_9"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="2dp"
+                android:contentDescription="@string/app_name"
+                android:padding="2dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_lock_msg" />
+
+            <ImageView
+                android:id="@+id/iv_lock_10"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="2dp"
+                android:contentDescription="@string/app_name"
+                android:padding="2dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_lock_msg" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:background="@color/app_white"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <EditText
+            android:id="@+id/edt_msg"
+            style="@style/TextAppearance.LatoRegular.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toStartOf="@+id/btn_send"
+            android:layout_toLeftOf="@+id/btn_send"
+            android:background="@color/app_white"
+            android:enabled="false"
+            android:fontFamily="@font/roboto_bold"
+            android:hint="@string/enter_your_message"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:minHeight="38dp"
+            android:padding="8dp"
+            android:scrollbars="vertical" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_send"
+            style="@style/TextAppearance.LatoRegular.Large"
+            android:layout_width="43dp"
+            android:layout_height="38dp"
+            android:layout_alignBottom="@id/edt_msg"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/ic_action_send"
+            android:enabled="false"
+            android:padding="2dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

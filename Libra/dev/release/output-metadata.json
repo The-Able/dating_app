@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.dating.reallife",
+  "variantName": "devRelease",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "properties": [],
+      "versionCode": 5,
+      "versionName": "1.0.4",
+      "enabled": true,
+      "outputFile": "Libra-dev-release.apk"
+    }
+  ]
+}
